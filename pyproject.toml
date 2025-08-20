@@ -1,6 +1,14 @@
+[project]
+name = "SAM-2"
+version = "1.0"
+description = "SAM2 (fork)"
+readme = "README.md"
+requires-python = ">=3.10"
+
 [build-system]
 requires = [
     "setuptools>=61.0",  
     "torch>=2.5.1",
-    ]
+    "torchvision>=0.20.1",
+]
 build-backend = "setuptools.build_meta"
