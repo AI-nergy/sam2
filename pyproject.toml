@@ -1,5 +1,5 @@
 [project]
-name = "SAM-2"
+name = "sam2"
 version = "1.0"
 description = "SAM2 (fork)"
 readme = "README.md"
