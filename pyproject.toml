@@ -1,9 +1,12 @@
 [project]
-name = "sam2"
+name = "SAM-2"
 version = "1.0"
 description = "SAM2 (fork)"
 readme = "README.md"
 requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["sam2"]
 
 [build-system]
 requires = [
