@@ -21,7 +21,7 @@ numpy = [
 ]
 
 [tool.setuptools]
-packages = ["sam2"]
+packages = { find = { exclude = ["notebooks"] } }
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]
