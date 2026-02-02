@@ -157,6 +157,9 @@ class PromptEncoder(nn.Module):
     def _get_device(self) -> torch.device:
         return self.point_embeddings[0].weight.device
 
+    def _get_dtype(self) -> torch.dtype:
+        return self.point_embeddings[0].weight.dtype
+
     def forward(
         self,
         points: Optional[Tuple[torch.Tensor, torch.Tensor]],
@@ -182,7 +185,7 @@ class PromptEncoder(nn.Module):
         """
         bs = self._get_batch_size(points, boxes, masks)
         sparse_embeddings = torch.empty(
-            (bs, 0, self.embed_dim), device=self._get_device()
+            (bs, 0, self.embed_dim), device=self._get_device(), dtype=self._get_dtype(),
         )
         if points is not None:
             coords, labels = points
