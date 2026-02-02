@@ -1,6 +1,6 @@
 [project]
 name = "SAM-2"
-version = "1.0+aiefork"
+version = "1.1+aiefork"
 description = "SAM2 (fork)"
 readme = "README.md"
 requires-python = ">=3.10"
